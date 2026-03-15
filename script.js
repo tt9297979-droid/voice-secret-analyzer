@@ -23,3 +23,14 @@ ${data.text}
 ${data.morse}
 `
 }
+async function upload(){
+
+let res = await fetch("/api/analyze",{
+method:"POST"
+})
+
+let data = await res.json()
+
+console.log(data)
+
+}
