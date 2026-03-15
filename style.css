@@ -7,11 +7,12 @@ padding:40px;
 }
 
 button{
-padding:10px 20px;
+padding:12px 25px;
 background:#22c55e;
 border:none;
 color:white;
 font-size:16px;
+cursor:pointer;
 }
 
 #result{
