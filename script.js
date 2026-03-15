@@ -4,7 +4,7 @@ let file = document.getElementById("video").files[0]
 
 let formData = new FormData()
 
-formData.append("video", file)
+formData.append("file",file)
 
 let res = await fetch("/api/analyze",{
 method:"POST",
@@ -14,23 +14,12 @@ body:formData
 let data = await res.json()
 
 document.getElementById("result").innerHTML =
-
 `
-<h3>Speech</h3>
+<h3>Speech To Text</h3>
 ${data.text}
 
-<h3>Morse</h3>
+<h3>Morse Detection</h3>
 ${data.morse}
 `
-}
-async function upload(){
-
-let res = await fetch("/api/analyze",{
-method:"POST"
-})
-
-let data = await res.json()
-
-console.log(data)
 
 }
