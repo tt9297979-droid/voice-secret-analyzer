@@ -18,7 +18,6 @@ def analyze():
     video_path = "video.mp4"
     video.save(video_path)
 
-    # ตัวอย่างผลวิเคราะห์
     text_detected = "เสียงที่ตรวจพบจากวิดีโอ"
     morse_detected = "... --- ..."
 
